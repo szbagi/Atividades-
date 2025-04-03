@@ -1,0 +1,12 @@
+.tabelaMaior {
+  border: 2px solid;
+   width: 90%;
+   border-collapse: collapse;
+   margin: auto;
+}
+
+.mensagem {
+	font-family: "Apple Chancery, cursive";
+	color: red;
+	text-align: center
+}
