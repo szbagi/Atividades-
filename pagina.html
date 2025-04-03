@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Título</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/javascript.js"></script>
+
+</head>
+<body>
+	<center>
+		<h1>Formulário de Requisição de Documentos</h1>
+	</center>
+
+<form method="post" action="pagina.php" onsubmit=" return checarNumDocs()">
+	
+	<table class="tabelaMaior">
+		<tr>
+			<td>Nome:</td>
+			<td><input type="text" name="nome"
+				required></td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>Idade:</td>
+			<td><input type="number" name="idade"
+				min="10" max="100" required></td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>E-mail:</td>
+			<td><input type="email" name="E-mail"
+				required></td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>Documento 1:</td>
+			<td>
+				<select name="doc">
+					<option value="nascimento">Nascimento</option>
+					<option value="casamento" >Casamento</option>
+					<option value="divorcio">Divórcio</option>
+				</select>
+			</td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>Documento 2:</td>
+			<td>
+					<input name = "doc2[]" type = "checkbox" value="nascimento">Nascimento<br>
+					<input name = "doc2[]" type = "checkbox" value="casamento">Casamento<br>
+					<input name = "doc2[]" type = "checkbox" value="divorcio">Divórcio
+			</td>
+			<td>
+				<p class="mensagem">Escolha pelo menos 2 documentos desse item</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Documento 3:</td>
+			<td>
+					<input name = "doc3" type = "radio" value="nascimento">Nascimento<br>
+					<input name = "doc3" type = "radio" value="casamento">Casamento<br>
+					<input name = "doc3" type = "radio" value="divorcio">Divórcio
+			</td>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td colspan = "3" align="center">
+				<table>
+					<tr>
+						<td align="center"><input type="submit" value="Enviar"></td>
+						<td align="center"><input type="reset" value="Apagar"></td>
+					</tr>
+				</table>
+			</td>		
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+
+
+
